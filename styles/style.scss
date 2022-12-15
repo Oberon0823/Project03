@@ -1,0 +1,64 @@
+*{
+    padding: 0;     /*所有內容貼齊邊框, 以利後續排版*/
+    margin: 0;
+    box-sizing: border-box;     /*左右內容不因添加padding而產生滾動軸*/
+    /*background-color: black;
+    color: white;*/
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/*h1, h2, h3, h4, h5, h6{
+    font-weight: normal;        /*標題字體粗細全部還原預設, 以利後續排版*/
+/*}*/
+.Orange{
+    position: absolute;
+    top: -10vh;
+    right: 0;
+    z-index: -1;
+    width: 55vw;
+    height: 150vh;
+}
+
+header{
+    nav{
+        width: 100%;
+        ul{
+            width: 70%; /*實際內容寬度*/
+            display: flex;
+            list-style-type: none; /*去除標點符號*/
+            justify-content: space-around;
+            li{
+                font-size: 1.5rem;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    section.left{
+        flex: 3 1 500px;
+        h1{
+
+        }
+
+    }
+    section.right{
+        flex:  1 1 600px;
+        position: relative;
+        img{
+            border-radius: 50%;
+            width: 20vw;
+            height: 50vh;
+            position: absolute; /*使其位置依照section.right的位置擺放*/
+            top: 35vh;
+            right: 25vw;
+            /*transform: translateY(-50%);*/
+        }
+    }
+}
