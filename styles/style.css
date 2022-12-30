@@ -13,8 +13,8 @@
 /*}*/
 .Orange {
   position: absolute;
-  top: -10vh;
-  right: 0;
+  top: -15vh;
+  right: -5vw;
   z-index: -1;
   width: 55vw;
   height: 150vh;
@@ -65,14 +65,15 @@ main section.right img {
   width: 20vw;
   height: 52.5vh;
   position: absolute; /*使其位置依照section.right的位置擺放*/
-  top: 20vh;
-  right: 25vw;
+  top: 17.5vh;
+  right: 20vw;
   /*transform: translateY(-50%);*/
 }
 
 footer {
   width: 100%;
   margin-left: 1.75vw;
+  margin-top: 10vh;
 }
 footer div.icons {
   display: flex;
