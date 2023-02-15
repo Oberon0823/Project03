@@ -1,0 +1,83 @@
+*{
+    padding: 0;     /*所有內容貼齊邊框, 以利後續排版*/
+    margin: 0;
+    box-sizing: border-box;     /*左右內容不因添加padding而產生滾動軸*/
+    /*background-color: black;
+    color: white;*/
+    font-family: 'Noto Sans TC', sans-serif;
+}
+body{
+    position: relative;
+    header{
+        nav{
+            width: 100%;
+            ul{
+                width: 67.5%; /*實際內容寬度*/
+                display: flex;
+                list-style-type: none; /*去除標點符號*/
+                justify-content: space-around;
+                margin: 3.5vh 0vw 7.5vh 1.25vw; /*上右下左*/
+                li{
+                    font-size: 1.75rem;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        display: flex;
+        section.left{
+            table{
+                width: 50vw;
+                height: 70vh;
+                padding-left: 5%;
+                display: flex;
+                
+                thead{
+                    border-top: 2.25px solid black;    /*邊線顏色*/
+                    border-spacing: 0px;
+                    tr{
+                        th{
+                            width: 10vw;
+                            height: 12.5vh;
+                            font-size: 18px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            text-align: center;
+                        background-color: gray;
+                            border-bottom: 2.25px solid black;    /*邊線顏色*/
+                        }
+                    }
+                }
+                tbody{
+                    border-top: 2.25px solid black;    /*邊線顏色*/
+                    border-spacing: 0px;
+                    tr{
+                        td{
+                            div.ICONS{
+                                width: 100px;
+                                height: 100px;
+                                display: flex;
+                                flex-direction: row;
+                            }
+                            width: 40vw;
+                            height: 12.5vh;
+                            font-size: 18px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        background-color: darkolivegreen;
+                            border-bottom: 2.25px solid black;    /*邊線顏色*/
+                            padding: 0 5% 0 5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

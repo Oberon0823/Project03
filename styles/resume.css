@@ -1,0 +1,75 @@
+@charset "UTF-8";
+* {
+  padding: 0; /*所有內容貼齊邊框, 以利後續排版*/
+  margin: 0;
+  box-sizing: border-box; /*左右內容不因添加padding而產生滾動軸*/
+  /*background-color: black;
+  color: white;*/
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+body {
+  position: relative;
+}
+body header nav {
+  width: 100%;
+}
+body header nav ul {
+  width: 67.5%; /*實際內容寬度*/
+  display: flex;
+  list-style-type: none; /*去除標點符號*/
+  justify-content: space-around;
+  margin: 3.5vh 0vw 7.5vh 1.25vw; /*上右下左*/
+}
+body header nav ul li {
+  font-size: 1.75rem;
+}
+body header nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+body main {
+  display: flex;
+}
+body main section.left table {
+  width: 50vw;
+  height: 70vh;
+  padding-left: 5%;
+  display: flex;
+}
+body main section.left table thead {
+  border-top: 2.25px solid black; /*邊線顏色*/
+  border-spacing: 0px;
+}
+body main section.left table thead tr th {
+  width: 10vw;
+  height: 12.5vh;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: gray;
+  border-bottom: 2.25px solid black; /*邊線顏色*/
+}
+body main section.left table tbody {
+  border-top: 2.25px solid black; /*邊線顏色*/
+  border-spacing: 0px;
+}
+body main section.left table tbody tr td {
+  width: 40vw;
+  height: 12.5vh;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: darkolivegreen;
+  border-bottom: 2.25px solid black; /*邊線顏色*/
+  padding: 0 5% 0 5%;
+}
+body main section.left table tbody tr td div.ICONS {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=resume.css.map */
