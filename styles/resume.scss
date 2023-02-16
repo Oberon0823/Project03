@@ -31,11 +31,14 @@ body{
     main{
         display: flex;
         section.left{
+            flex: 3;
+        //background-color: orange;
             table{
                 width: 50vw;
                 height: 70vh;
                 padding-left: 5%;
                 display: flex;
+            //background-color: aqua;
                 
                 thead{
                     border-top: 2.25px solid black;    /*邊線顏色*/
@@ -49,8 +52,12 @@ body{
                             flex-direction: column;
                             justify-content: center;
                             text-align: center;
-                        background-color: gray;
+                        //background-color: gray;
                             border-bottom: 2.25px solid black;    /*邊線顏色*/
+                            td:hover{
+                                background-color: darkgray;
+                                transition: .5s;
+                            }
                         }
                     }
                 }
@@ -71,13 +78,47 @@ body{
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                        background-color: darkolivegreen;
+                        //background-color: darkolivegreen;
                             border-bottom: 2.25px solid black;    /*邊線顏色*/
                             padding: 0 5% 0 5%;
+                            &:hover{
+                                background-color: darkgray;
+                                transition: .5s;
+                            }
                         }
                     }
                 }
             }
+            footer{
+                padding-left: 5%;
+                div.icons{
+                    a{
+                        margin-right: 2.25%;
+                    }
+                }
+            }
+        }
+        section.right{
+            flex: 2;
+        //background-color: purple;
+            position: relative;
+            div.Back{
+                    position: absolute;
+                    top: 3.75%;
+                    left: 10%;
+                    z-index: 1;
+                    width: 25vw;
+                    height: 75vh;
+                    background-color: #606060;
+                }
+            
+                img{
+                    position: absolute;
+                    top: -3.75vh;
+                    width: 60%;
+                    //size: 50%;
+                    z-index: 2;
+                }   
+            }
         }
     }
-}
