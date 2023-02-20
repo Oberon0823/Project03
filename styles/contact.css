@@ -3,8 +3,6 @@
   padding: 0; /*所有內容貼齊邊框, 以利後續排版*/
   margin: 0;
   box-sizing: border-box; /*左右內容不因添加padding而產生滾動軸*/
-  /*background-color: black;
-  color: white;*/
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -33,7 +31,7 @@ main {
 main section.left {
   width: 52.5vw;
   height: 75vh;
-  border-right: 2px solid black;
+  border-right: 2.5px solid black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -80,9 +78,10 @@ main section.right {
   padding-left: 2.5vw;
   justify-content: center;
 }
-main section.right p {
+main section.right p.MyImf {
   font-size: 1.5rem;
-  margin-bottom: 1vh;
+  font-weight: bold;
+  margin-top: 1.5vh;
 }
 main footer {
   width: 52.5vw;

@@ -4,7 +4,12 @@
     <meta charset="UTF-8"><!--網頁字體-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--網頁視窗大小可調性, 且預設1.0倍率-->
     <meta name="description" content="Oberon0823"/><!--網頁大綱-->
-    <title>   </title><!--網頁標題-->
+    <title>聯絡方式表單</title><!--網頁標題-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/contact.css" /><!--使用CSS-->
 </head>
 <body>
@@ -26,13 +31,13 @@
                     <input id="text" type="text" placeholder="請輸入姓名" required>
                 </label>
                 <label>電話:
-                    <input id="number" type="number" placeholder="請輸入手機或市話號碼" required>
+                    <input id="number" type="text" placeholder="請輸入手機或市話號碼" required>
                 </label>
                 <label>信箱:
                     <input id="email" type="email" placeholder="請輸入信箱" required>
                 </label>
                 <label class="TextArea">備註:
-                    <textarea rows="15px" cols="120px">請輸入內容</textarea>
+                    <textarea rows="15px" cols="120px"></textarea>
                 </label>
                 <button id="submit" type="submit">提交表單</button> <!--type="submit" = 屬性為提交-->
             </form>
