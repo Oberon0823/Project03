@@ -59,12 +59,13 @@ main{
                     height: 30vh;
                     background-color: darkgray;
                     border: none;
+                    vertical-align: top;
                 }
             }
             button{
                 margin-top: 2vh;
                 width: 10vw;
-                height: 10vh;
+                height: 7.5vh;
                 font-size: 1.5rem;
                 color: aliceblue;
                 border-radius: 20px;
@@ -98,5 +99,106 @@ main{
                         margin-right: 2.25%;
                     }
                 }
+    }
+}
+@media screen and (max-width:1280px) { /*當小於1280時*/
+    main{
+        section.left{
+            form{
+                label{
+                    input{
+                        width: 37.5vw;
+                    }
+                    textarea{
+                        width: 37.5vw;
+                    }
+                }
+            }
+        }
+        section.right{
+            p.MyImf{
+                font-size: 1.25rem;
+                margin-top: 1.25vh;
+            }
+        }
+    }
+}
+@media screen and (max-width:1220px) { /*當小於1220時*/
+    header{
+        nav{
+            ul{
+                li{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    main{
+        section.left{
+            form{
+                button{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        section.right{
+            p.MyImf{
+                font-size: 1.25rem;
+                margin-top: 1.25vh;
+            }
+        }
+        footer{
+            div.icons{
+                a{
+                    img.icon{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1000px) {
+    header{
+        nav{
+            width: 100%;
+            ul{
+                width: 99%; /*實際內容寬度*/
+            }
+        }
+    }
+    main{
+        flex-direction: column;
+        
+        section.left{
+            border-right: none;
+            width: 100%;
+
+            form{
+                label{
+                    input{
+                        width: 55vw;
+                    }
+                    textarea{
+                        width: 55vw;
+                    }
+                }
+            }
+        }
+        section.right{
+            width: 100%;
+            padding-left: 0px;
+            p{
+                margin-left: 30vw;
+            }
+        }
+        footer{
+            width: 100vw;
+            padding-left: 0px;
+            div.icons{
+                width: 99vw;
+                text-align: center;
+            }
+        }
     }
 }
