@@ -1,67 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8"><!--網頁字體-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--網頁視窗大小可調性, 且預設1.0倍率-->
-    <meta name="description" content="Oberon0823"/><!--網頁大綱-->
-    <title>聯絡方式表單</title><!--網頁標題-->
+  <head>
+    <meta charset="UTF-8" />
+    <!--網頁字體-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--網頁視窗大小可調性, 且預設1.0倍率-->
+    <meta name="description" content="Oberon0823" />
+    <!--網頁大綱-->
+    <title>聯絡方式表單</title>
+    <!--網頁標題-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/contact.css" /><!--使用CSS-->
-</head>
-<body>
-    <header> <!--網頁上半部-->
-        <nav>
-            <ul>
-                <li><a href="./main.html">首頁</a></li>
-                <li><a href="./resume.html">我的履歷</a></li>
-                <li><a href="./contact.html">聯絡方式</a></li>
-                <li><a href="C:\Users\Oberon\Desktop\git-repo\Project01\main.html">Taiwan Project</a></li>
-                <li><a href="C:\Users\Oberon\Desktop\git-repo\Project02\main.html">Hawaii Project</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <!--使用CSS-->
+  </head>
+  <body>
+    <header>
+      <!--網頁上半部-->
+      <nav>
+        <ul>
+          <li><a href="./main.html">首頁</a></li>
+          <li><a href="./resume.html">我的履歷</a></li>
+          <li><a href="./contact.html">聯絡方式</a></li>
+          <li>
+            <a
+              href="C:\Users\Oberon\Desktop\git-repo\Project01\project01_2022\main.html"
+              >Taiwan Project</a
+            >
+          </li>
+          <li>
+            <a href="C:\Users\Oberon\Desktop\git-repo\Project02\2022\main.html"
+              >Hawaii Project</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="left">
-            <form>
-                <label style="margin-top: 2.5vh">姓名:
-                    <input id="text" type="text" placeholder="請輸入姓名" required>
-                </label>
-                <label>電話:
-                    <input id="number" type="text" placeholder="請輸入手機或市話號碼" required>
-                </label>
-                <label>信箱:
-                    <input id="email" type="email" placeholder="請輸入信箱" required>
-                </label>
-                <label class="TextArea">備註:
-                    <textarea rows="15px" cols="120px"></textarea>
-                </label>
-                <button id="submit" type="submit">提交表單</button> <!--type="submit" = 屬性為提交-->
-            </form>
-        </section>
-        <section class="right">
-            <p class="MyImf">我的電話: 0922-222-222</p>
-            <p class="MyImf">我的Email : handsome@fakemail.com</p>
-            <p class="MyImf">方便聯絡時間 : 周一至周六早上八點到晚上七點</p>
-            <p class="MyImf">其他聯絡方式 : 臉書、IG</p>
-        </section>
+      <section class="left">
+        <form>
+          <label style="margin-top: 2.5vh"
+            >姓名:
+            <input id="text" type="text" placeholder="請輸入姓名" required />
+          </label>
+          <label
+            >電話:
+            <input
+              id="number"
+              type="text"
+              placeholder="請輸入手機或市話號碼"
+              required
+            />
+          </label>
+          <label
+            >信箱:
+            <input id="email" type="email" placeholder="請輸入信箱" required />
+          </label>
+          <label class="TextArea"
+            >備註:
+            <textarea rows="15px" cols="120px"></textarea>
+          </label>
+          <button id="submit" type="submit">提交表單</button>
+          <!--type="submit" = 屬性為提交-->
+        </form>
+      </section>
+      <section class="right">
+        <p class="MyImf">我的電話: 0922-222-222</p>
+        <p class="MyImf">我的Email : handsome@fakemail.com</p>
+        <p class="MyImf">方便聯絡時間 : 周一至周六早上八點到晚上七點</p>
+        <p class="MyImf">其他聯絡方式 : 臉書、IG</p>
+      </section>
 
-        <footer>
-            <div class="icons">
-                <a href="#">
-                    <img class="icon" src="./Icons/facebook.svg" alt="fb">
-                </a>
-                <a href="#">
-                    <img class="icon" src="./Icons/instagram.svg" alt="ig">
-                </a>
-                <a href="https://github.com/Oberon0823">
-                    <img class="icon" src="./Icons/github-brands 1.svg" alt="git">
-                </a>
-            </div>
-        </footer>
-    </main> <!--內容-->
-</body>
+      <footer>
+        <div class="icons">
+          <a href="#">
+            <img class="icon" src="./Icons/facebook.svg" alt="fb" />
+          </a>
+          <a href="#">
+            <img class="icon" src="./Icons/instagram.svg" alt="ig" />
+          </a>
+          <a href="https://github.com/Oberon0823">
+            <img class="icon" src="./Icons/github-brands 1.svg" alt="git" />
+          </a>
+        </div>
+      </footer>
+    </main>
+    <!--內容-->
+  </body>
 </html>
